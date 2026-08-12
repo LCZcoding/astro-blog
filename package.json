@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"@iconify-json/uiw": "^1.2.4",
+		"icons": "^1.0.0"
+	}
+}
