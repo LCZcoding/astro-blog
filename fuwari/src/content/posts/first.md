@@ -3,7 +3,7 @@ title: 浅谈在AI时代学习计算机技术的心态调整和学习方式(此�
 published: 2026-08-12
 description: '进入陌生领域，80%的时间都是在选择、学习并适应新技术!'
 image: ''
-tags: ["记录","感悟","准大三暑假"]
+tags: ["记录","感悟","to3"]
 category: '碎碎念'
 draft: false 
 lang: ''
