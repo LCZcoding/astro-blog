@@ -8,6 +8,10 @@ category: '笔记'
 draft: false 
 lang: ''
 ---
+
+- [ ] 是否借助ai
+
+
 本人写的 [带图飞书文档](https://rcnujngjny8w.feishu.cn/wiki/JaCZweUVBixZ3DkVMmHc2m9Fn1c?from=from_copylink)、更加详细具体的可以参考[菜鸟](https://www.runoob.com/git/git-tutorial.html)
 
 # 克隆远程仓库到本地

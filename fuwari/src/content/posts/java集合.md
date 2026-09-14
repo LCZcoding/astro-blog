@@ -9,6 +9,8 @@ draft: false
 lang: ''
 ---
 
+- [x] 是否借助ai
+
 # Java 常用集合与 API 详解
 
 > 面向 Java 后端面试与日常开发的集合框架系统性整理文档。内容涵盖 `Collection` 与 `Map` 两大体系下的核心实现类、底层数据结构、关键 API、源码级原理、性能对比与并发场景实践，并补充 Java 8 引入的 `Stream` API 与 `java.util.concurrent` 包下的并发集合。**对应 JDK 版本以 JDK 8 / 11 / 17 为主**，关键差异会单独标注。
