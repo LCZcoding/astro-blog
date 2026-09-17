@@ -1,0 +1,49 @@
+---
+// src/components/misc/Giscus.astro
+interface Props {
+  repoId: string;
+  categoryId: string;
+}
+const { repoId, categoryId } = Astro.props;
+---
+<div class="giscus mt-8"></div>
+
+<script is:inline define:vars={{ repoId, categoryId }}>
+  // 根据当前主题设置 Giscus 主题
+  const setGiscusTheme = () => {
+    const isDark = document.documentElement.classList.contains('dark');
+    const theme = isDark ? 'dark' : 'light';
+    const iframe = document.querySelector('.giscus iframe');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme } } },
+        'https://giscus.app'
+      );
+    }
+  };
+
+  // 监听主题变化（如果你的 Fuwari 配置了主题切换按钮）
+  const observer = new MutationObserver(() => {
+    setGiscusTheme();
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+  // 加载 Giscus 脚本
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'LCZcoding/astro-blog');
+  script.setAttribute('data-repo-id', repoId);
+  script.setAttribute('data-category', 'Announcements');
+  script.setAttribute('data-category-id', categoryId);
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+  script.setAttribute('data-lang', 'zh-CN');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+
+  document.querySelector('.giscus').appendChild(script);
+</script>

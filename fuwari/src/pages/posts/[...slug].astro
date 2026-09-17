@@ -1,4 +1,5 @@
 ---
+import Giscus from '@/components/misc/Giscus.astro';
 import path from "node:path";
 import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
@@ -105,9 +106,12 @@ const jsonLd = {
             <Markdown class="mb-6 markdown-content onload-animation">
                 <Content />
             </Markdown>
-
+            
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
-
+            <Giscus 
+                repoId="R_kgDOT1BV0w" 
+                categoryId="DIC_kwDOT1BV084DFyj3"
+            />
         </div>
     </div>
 
