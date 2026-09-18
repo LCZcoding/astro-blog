@@ -20,6 +20,19 @@ import type { Favicon } from "../types/config";
 import { pathsEqual, url } from "../utils/url-utils";
 import "katex/dist/katex.css";
 
+// Explicitly import local styles in dependency order.
+// markdown.css has @import "./main.css" so that Tailwind can resolve
+// @apply with custom classes (.link, .btn-regular-dark) defined in main.css.
+// Without explicit imports, these files were only pulled in by the wildcard
+// glob in ImageWrapper.astro, causing non-deterministic processing order.
+import "../styles/variables.styl";
+import "../styles/markdown.css";
+import "../styles/markdown-extend.styl";
+import "../styles/transition.css";
+import "../styles/scrollbar.css";
+import "../styles/photoswipe.css";
+import "../styles/expressive-code.css";
+
 interface Props {
 	title?: string;
 	banner?: string;
