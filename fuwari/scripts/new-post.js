@@ -52,6 +52,7 @@ category: ''
 draft: false 
 lang: ''
 ---
+- [ ] 是否借助ai
 `
 
 fs.writeFileSync(path.join(targetDir, fileName), content)
