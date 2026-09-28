@@ -160,6 +160,10 @@ const bannerOffset =
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 
+		<!-- Umami Cloud analytics (loaded async, does not block page render) -->
+		<script is:inline defer src="https://cloud.umami.is/script.js"
+				data-website-id="7d515caa-8d50-4ed3-8be8-5c318ef72a8c"></script>
+
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
