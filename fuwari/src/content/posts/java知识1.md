@@ -1,5 +1,5 @@
 ---
-title: java知识1
+title: java序列化和反序列化
 published: 2026-09-21
 description: ''
 image: ''
@@ -111,6 +111,7 @@ HashMap 的扩容由负载因子控制，默认是 0.75。意思就是当元素�
 回答：可以，HashMap 允许一个 null key。存的时候会把 null key 的 hash 值当成 0，固定放在数组下标 0 的位置。但 ConcurrentHashMap 不允许 null key，因为多线程场景下无法区分"key 不存在"和"key 存在但 value 是 null"。
 
 <a id="my-anchor"></a>
+
 # 3.解释equals和hashcode的关系
 契约规定：equals 相等的对象，hashCode 必须相等；但hashCode 相等的对象，equals 不一定相等。先比较hashcode后比较equals。
 
