@@ -3,8 +3,8 @@ title: vite介绍、浏览器为啥不能通过双击dist的html正常渲染：n
 published: 2026-10-09
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [前端]
+category: '前端'
 draft: false 
 lang: ''
 ---

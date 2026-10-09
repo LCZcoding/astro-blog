@@ -3,8 +3,8 @@ title: js匿名函数表达式和函数执行
 published: 2026-10-09
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [js]
+category: 'js'
 draft: false 
 lang: ''
 ---
