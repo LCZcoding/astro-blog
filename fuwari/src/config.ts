@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/flower.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/极光.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
@@ -58,7 +58,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/github-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/doro头像.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "涌现",
 	bio: "欢迎来到我的博客!Welcome to my world!(Thank saicaca for providing the template.)",
 	links: [
